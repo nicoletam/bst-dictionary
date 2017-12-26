@@ -5,11 +5,8 @@ BST Dictionary to correct spelling errors
 ; A Token is a Str that contains only lowercase letters.
 
 (define-struct wnode (rank word misspellings left right))
-; A WNode is a
-;	(make-wnode Nat Token (listof Token) BST-Dictionary BST-Dictionarye)
-; requires
-; rank is a positive integer representing the frequency of word
-;	as it is used in the English language
+; A WNode is a (make-wnode Nat Token (listof Token) BST-Dictionary BST-Dictionarye)
+; Requires: rank is a positive integer representing the frequency of word as it is used in the English language
 ; misspellings is a list of common misspellings of word
 
 ; A BST-Dictionary is one of
